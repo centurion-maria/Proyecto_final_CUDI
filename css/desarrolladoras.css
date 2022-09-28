@@ -1,0 +1,13 @@
+.dev{
+    padding: 3em 0;
+    /*width: 940px;*/
+    margin: 0 auto; 
+}
+.dev-info {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 300px;
+}
