@@ -5,30 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de nosotros</title>
-    <link rel="stylesheet" href="acerca de nosotros.css">
+    <link rel="stylesheet" href="css/acerca_De_Nosotros.css">
+    <link rel="stylesheet" href="css/index_style.css" >
 </head>
 
 <body>
-    <div>
-        <h1>SOBRE PLANETA MASCOTAS</h1>
-        <p>Somos un Pet Shop, peluquería y veterinaria ubicado en el corazón   de  Buenos Aires.
-            Desde hace más de 10 años trabajamos en equipo con máxima responsabilidad y dedicación por sus mascotas, sin perder el espíritu de empresa familiar que tanto nos caracteriza.</p>
+    <!-- Barra de navegacion -->
+    <header class="header" id="header">
+        <section class="wrapper container">
+            <a href="index.html" class="brand">Planeta Mascotas </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <nav class="navbar" id="navbar">
+                <ul class="menu" id="menu">
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu"> Productos <i class="bx bx-chevron-down"></i></span>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="gatos.html" class="submenu-link"> Gatos </a></li>
+                            <li class="submenu-item"><a href="#" class="submenu-link"> Perros </a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="login.html" class="menu-link"> Login </a></li>
+                    <li class="menu-item"><a href="#" class="menu-link"> Nosotras </a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <img id="banner" src="Imagenes/banner.jpg">
+        <section>
+            <div class="principal">
+                <h1> SOBRE PLANETA MASCOTAS</h1>
+                <p>Somos un Pet Shop, peluquería y veterinaria ubicado en el corazón de Buenos Aires.
+                    Desde hace más de 10 años trabajamos en equipo con máxima responsabilidad y dedicación por sus mascotas, sin
+                    perder el espíritu de empresa familiar que tanto nos caracteriza.</p>
+            
+                <p>En <strong>Planeta Mascotas</strong> amamos a los animales, es por eso, que brindamos la mejor calidad en
+                    nuestros productos y
+                    servicios de excelencia, siempre al precio más conveniente.
+                </p>
+            </div>
 
-        <p>En <strong>Planeta Mascotas</strong>  amamos a los animales, es  por   eso, que brindamos la mejor calidad en nuestros productos y
-            servicios de excelencia, siempre al precio más conveniente.
-        </p>
-    </div>
-    <div>
-        <h2>NUESTRA MISIÓN</h2>
-        <p>Ayudar a enriquecer y prolongar las relaciones especiales entre las personas y sus mascotas.</p>
+            <div class="diferenciales">
+                <h2>NUESTRA MISIÓN</h2>
+                <p>Ayudar a enriquecer y prolongar las relaciones especiales entre las personas y sus mascotas.</p>
+            
+                <h2>NUESTRA VISIÓN</h2>
+                <p>Ser una empresa moderna y sólida, que ayude a crear un mundo mejor, ayudando a amar y proteger a sus mascotas.
+                </p>
+            
+                <h2>NUESTRA FILOSOFÍA</h2>
+                <p>Creemos que todos los animales deben ser amados y cuidados durante sus vidas.</p>
+            </div>
 
-        <h2>NUESTRA VISIÓN</h2>
-        <p>Ser una empresa moderna y sólida, que ayude a crear un mundo mejor, ayudando a amar y proteger a sus mascotas.</p>
-
-        <h2>NUESTRA FILOSOFÍA</h2>
-        <p>Creemos que todos los animales deben ser amados y cuidados durante sus vidas.</p>
-    </div>
-    
-    
+        </section>
+    </main>
 </body>
+<footer>
+    <img id="logo" src="Imagenes/logo.jpg">
+    <p class="copyright">&copy Copyright Planeta Mascotas - 2022</p>
+</footer>
 </html>
