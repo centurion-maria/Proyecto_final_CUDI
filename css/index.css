@@ -1,0 +1,421 @@
+
+* {
+    background-image: url(imagenes/fondo.png);
+    font-family: 'Adamina';font-size: 22px;
+}
+
+:root {
+	--color-white-100: hsl(206, 5%, 98%);
+	--color-white-200: hsl(206, 5%, 90%);
+	--color-white-300: hsl(206, 5%, 80%);
+	--color-white-400: hsl(206, 5%, 65%);
+	--color-white-500: hsl(206, 5%, 50%);
+	--color-black-100: hsl(213, 23%, 8%);
+	--color-black-200: hsl(214, 21%, 6%);
+	--color-black-300: hsl(210, 21%, 6%);
+	--color-black-400: hsl(216, 22%, 4%);
+	--color-black-500: hsl(220, 18%, 3%);
+	--color-pink-400: hsl(330, 81%, 60%);
+	--color-pink-500: hsl(333, 71%, 50%);
+	--shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+	   0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+	   0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+	   0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+  
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+}
+  
+html {
+	font-size: 100%;
+	box-sizing: inherit;
+	scroll-behavior: smooth;
+	height: -webkit-fill-available;
+}
+  
+body {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	height: -webkit-fill-available;
+	color: var(--color-black-500);
+	background-color: var(--color-white-100);
+}
+  
+a, button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+	background: none;
+	box-shadow: none;
+}
+
+.container {
+	max-width: 75rem;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+}
+  
+.brand {
+	font-family: inherit;
+	font-size: 1.625rem;
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: var(--color-pink-500);
+}
+  
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+	margin: 0 auto;
+	box-shadow: var(--shadow-medium);
+	background-color: var(--color-white-100);
+}
+  
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	-moz-column-gap: 1rem;
+		 column-gap: 1rem;
+	row-gap: 2rem;
+	width: 100%;
+	height: 3.5rem;
+	margin: 0 auto;
+}
+  
+@media screen and (max-width: 992px) {
+	.navbar {
+	  position: fixed;
+	  top: 0;
+	  left: -100%;
+	  width: 75%;
+	  height: 100%;
+	  z-index: 10;
+	  opacity: 0;
+	  overflow-y: auto;
+	  visibility: hidden;
+	  box-shadow: var(--shadow-medium);
+	  background-color: var(--color-white-100);
+	  transition: all 0.5s ease;
+	}
+	.navbar.active {
+	  left: 0rem;
+	  opacity: 1;
+	  visibility: visible;
+	}
+}
+  
+.menu-item {
+	position: relative;
+	display: inline-block;
+	margin-left: 1.5rem;
+}
+.menu-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-moz-column-gap: 0.25rem;
+		 column-gap: 0.25rem;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: inherit;
+	cursor: pointer;
+	text-transform: capitalize;
+	color: var(--color-black-500);
+	transition: all 0.3s ease-in-out;
+}
+.menu-link > i.bx {
+	font-size: 1.35rem;
+	line-height: 1.5;
+	color: inherit;
+}
+.menu-link:hover {
+	outline: none;
+	color: var(--color-pink-500);
+}
+
+@media only screen and (min-width: 993px) {
+	.menu-dropdown:hover > .submenu {
+	  display: block;
+	  opacity: 1;
+	  visibility: visible;
+	  transform: translateY(0);
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.menu {
+	  width: 100%;
+	  height: auto;
+	  padding: 1rem 0;
+	}
+	.menu-item {
+	  display: block;
+	  margin: 0 auto;
+	}
+	.menu-link {
+	  justify-content: space-between;
+	  padding: 0.5rem 1.25rem;
+	}
+}
+  
+.submenu {
+	position: absolute;
+	top: 2.35rem;
+	left: -2rem;
+	min-width: 13rem;
+	height: auto;
+	padding: 0 1rem 1rem;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(1rem);
+	border-radius: 0 0 0.25rem 0.25rem;
+	border-top: 2px solid var(--color-pink-400);
+	box-shadow: var(--shadow-medium);
+	background-color: var(--color-white-100);
+	transition: all 0.3s ease-in-out;
+}
+.submenu-item {
+	display: block;
+	margin-top: 0.75rem;
+}
+.submenu-link {
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: inherit;
+	cursor: pointer;
+	color: var(--color-black-500);
+	transition: all 0.35s ease;
+}
+.submenu-link:hover {
+	outline: none;
+	color: var(--color-pink-500);
+}
+
+@media only screen and (max-width: 992px) {
+	.submenu {
+	  position: relative;
+	  top: -0.5rem;
+	  left: 2.5rem;
+	  width: 100%;
+	  max-height: 0;
+	  padding: 0px;
+	  border: none;
+	  outline: none;
+	  opacity: 1;
+	  overflow: hidden;
+	  visibility: visible;
+	  transform: translateY(0px);
+	  box-shadow: none;
+	  background: transparent;
+	}
+}
+  
+.burger {
+	position: relative;
+	display: none;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+	width: 1.75rem;
+	height: 1rem;
+	opacity: 0;
+	visibility: hidden;
+	background: transparent;
+}
+.burger-line {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	opacity: 1;
+	border: none;
+	outline: none;
+	background: var(--color-black-500);
+}
+.burger-line:nth-child(1) {
+	top: 0px;
+}
+.burger-line:nth-child(2) {
+	top: 0.5rem;
+}
+.burger-line:nth-child(3) {
+	top: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+	.burger {
+	  display: block;
+	  opacity: 1;
+	  visibility: visible;
+	}
+}
+  
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.35s ease-in-out;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+@media only screen and (max-width: 992px) {
+	.overlay.active {
+	  display: block;
+	  opacity: 1;
+	  visibility: visible;
+	}
+}
+
+/* Style del selector de Gatos o Perros */
+
+section {
+	margin-top: 200px;
+	text-align: center;
+	padding: 1.5em 1em;
+}
+
+.figure {
+  background: #1d1d1d;
+  display: inline-block;
+  margin: 30px;
+  max-width: 350px;
+  min-width: 230px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.figure * {
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+
+
+/* Section 1 - Hover Effect */
+
+.section-1 .figure:before,
+.section-1 .figure:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #1d1d1d;
+  border-left: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  content: '';
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.section-1 .figure:before {
+  -webkit-transform: skew(45deg) translateX(-180%);
+  transform: skew(45deg) translateX(-180%);
+}
+
+.section-1 .figure:after {
+  -webkit-transform: skew(45deg) translate(180%);
+  transform: skew(45deg) translateX(180%);
+}
+
+.section-1 .figure img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.section-1 .figure figcaption {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 2;
+    -webkit-transform: translate(-50%,-50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    -webkit-box-shadow: 0 0 10px #1d1d1d;
+    box-shadow: 0 0 10px #1d1d1d;
+}
+
+.section-1 .figure h3 {
+  background-color: #1d1d1d;
+  border: 2px solid #ffffff;
+  color: #220404;
+  font-size: 1em; 
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.section-1 .figure a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.section-1 .figure:hover > img,
+.section-1 .figure:hover > img {
+  opacity: 0.5;
+}
+
+.section-1 .figure:hover:before,
+.section-1 .figure.hover:before {
+  -webkit-transform: skew(45deg) translateX(-80%);
+  transform: skew(45deg) translateX(-80%);
+}
+
+.section-1 .figure:hover:after,
+.section-1 .figure.hover:after {
+  -webkit-transform: skew(45deg) translateX(80%);
+  transform: skew(45deg) translateX(80%);
+}
+
+.section-1 figure:hover figcaption,
+.section-1 figure.hover figcaption {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* Style productos para gato*/
+
