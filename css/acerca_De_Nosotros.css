@@ -1,9 +1,35 @@
+#banner{
+    width: 100%;
+    height:740px;
+    
+}
+
 h1{ 
     text-align: center;
+    padding: 30px;  
 }
 h2{
     text-align: center;
 }
 p{
     text-align: center;
+    font-family: Adamina;
+    font-size: 20px;
+}
+.diferenciales p{
+    color: palevioletred;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    padding: 100px;
+} 
+#logo{
+    width: 250px;
+    height: 250px;
+}
+.copyright{
+    font-size: 13px;
 }
