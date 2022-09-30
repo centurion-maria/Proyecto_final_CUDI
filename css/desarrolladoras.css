@@ -1,6 +1,6 @@
 .dev{
     padding: 3em 0;
-    /*width: 940px;*/
+    width: 940px;
     margin: 0 auto; 
 }
 .dev-info {
@@ -8,6 +8,7 @@
     justify-content: center;
 }
 
-img {
-    width: 300px;
+#dev-foto {
+    width: 200px;
+    height: 100px;
 }

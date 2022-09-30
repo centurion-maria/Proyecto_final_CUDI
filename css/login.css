@@ -1,17 +1,3 @@
-html {
-  width: 100%;
-  height: 100%;
-}
-  
-body {
-  background-image: url(imagenes/fondo.png);
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  line-height: 1.6em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-  
 .overlay, .form-panel.one:before {
   position: absolute;
   top: 0;

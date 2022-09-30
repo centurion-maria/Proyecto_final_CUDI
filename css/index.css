@@ -1,6 +1,5 @@
 
-* {	
-	background-image: url(/Imagenes/fondo.png);
+* {
     font-family: 'Adamina';font-size: 22px;
 }
 
@@ -44,6 +43,7 @@ html {
 }
   
 body {
+	background-image: url(/Imagenes/fondo.png);
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -90,7 +90,7 @@ a, button {
 	z-index: 100;
 	margin: 0 auto;
 	box-shadow: var(--shadow-medium);
-	background-color: var(--color-white-100);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(208,118,201,1) 0%, rgba(252,176,69,1) 100%);
 }
   
 .wrapper {
@@ -299,16 +299,26 @@ a, button {
 	}
 }
 
+/* Style banner */
+
+.banner{
+    width: auto;
+    height: 540px;
+	background-image: url(/Imagenes/banner.png);
+	background-size: contain;
+}
+
+
 /* Style del selector de Gatos o Perros */
 
-section {
+#selector1 {
 	margin-top: 200px;
 	text-align: center;
 	padding: 1.5em 1em;
 }
 
 .figure {
-  background: #1d1d1d;
+
   display: inline-block;
   margin: 30px;
   max-width: 350px;
@@ -326,6 +336,8 @@ section {
 
 
 
+
+
 /* Section 1 - Hover Effect */
 
 .section-1 .figure:before,
@@ -337,9 +349,9 @@ section {
   right: 0;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  background-color: #1d1d1d;
-  border-left: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
+  background-color: #000000;
+  border-left: 3px solid #000000;
+  border-right: 3px solid #000000;
   content: '';
   opacity: 0.9;
   z-index: 1;
@@ -375,7 +387,7 @@ section {
 .section-1 .figure h3 {
   background-color: #1d1d1d;
   border: 2px solid #ffffff;
-  color: #220404;
+  color: #fcf7f7;
   font-size: 1em; 
   font-weight: 600;
   letter-spacing: 1px;
