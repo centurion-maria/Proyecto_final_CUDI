@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planeta Mascotas</title>
-    <link rel="stylesheet" href="css/index.css" >
-    <link rel="stylesheet" href="css/acerca_De_Nosotros.css">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/servicios.css">
     <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
 </head>
 
@@ -14,11 +15,9 @@
     <!-- Barra de navegacion -->
     <header class="header" id="header">
         <section class="wrapper container">
-
             <a href="index.html" class="brand">
               <img src="Imagenes/logo_nav.png" alt="logo" width="40" height="35" class="d-inline-block align-text-top"> Planeta Mascotas 
             </a>
-
             <div class="burger" id="burger">
                 <span class="burger-line"></span>
                 <span class="burger-line"></span>
@@ -43,43 +42,40 @@
         </section>
     </header>
     <main>
-        <img id="banner" src="Imagenes/banner.png">
-        <section>
-            <div class="principal">
-                <h1> SOBRE PLANETA MASCOTAS</h1>
-                <p>Somos un Pet Shop, peluquería y veterinaria ubicado en el corazón de Buenos Aires.
-                    Desde hace más de 10 años trabajamos en equipo con máxima responsabilidad y dedicación por sus mascotas, sin
-                    perder el espíritu de empresa familiar que tanto nos caracteriza.</p>
-            
-                <p>En <strong>Planeta Mascotas</strong> amamos a los animales, es por eso, que brindamos la mejor calidad en
-                    nuestros productos y
-                    servicios de excelencia, siempre al precio más conveniente.
-                </p>
-            </div>
-            <br>
-            <br>
-            <div class="diferenciales">
-
-                <h2>NUESTRA MISIÓN</h2>
-                <p>Ayudar a enriquecer y prolongar las relaciones especiales entre las personas y sus mascotas.</p>
-            
-                <h2>NUESTRA VISIÓN</h2>
-                <p>Ser una empresa moderna y sólida, que ayude a crear un mundo mejor, ayudando a amar y proteger a sus mascotas.
-                </p>
-            
-                <h2>NUESTRA FILOSOFÍA</h2>
-                <p>Creemos que todos los animales deben ser amados y cuidados durante sus vidas.</p>
-            </div>
-        </section>
+        <!-- Sector Peluqueria -->
         <section>
             <div>
-                <h3 class="titulo-principal ">NUESTRA UBICACIÓN </h3>
-                <p>Nuestro local esta ubicado en el corazon de Buenos Aires </p>
-
-                
-
+                <h1 class="titulo-principal" >PELUQUERIA</h1>
+                <ul class="servicios">
+                    <li>
+                        <h2 class="titulo-secundario" >Baño</h2>
+                        <img id="baño" src="Imagenes/baño.jpg">
+                        <p class="precio"> $1000</p>
+                    </li>
+                    <li>
+                        <h2 class="titulo-secundario">Baño + Corte</h2>
+                        <img id="corte" src="Imagenes/baño+corte.jpg">
+                        <p class="precio">$1600</p>
+                    </li>
+                </ul>
             </div>
-
+        </section>
+        <!--Sector veterinaria-->
+        <section>
+            <div>
+                <h3 class="titulo-principal">VETERINARIA </h3> 
+                  <ull>
+                     <li class="items ">Clínica General </li>
+                     <li class="items ">Cirugía </li>
+                     <li class="items ">Laboratorio </li>
+                     <li class="items ">Vacunas </li>
+                     <li class="items ">Estudios </li>
+                     <li class="items ">Tienda </li>
+                  </ull>
+             </div>
+             <div class="video">
+                 <video src="https://youtu.be/v-3mnOTJvP4 " alt="video"></video>
+             </div>
         </section>
     </main>
 </body>
@@ -87,4 +83,4 @@
     <img id="logo" src="Imagenes/logo.jpg">
     <p class="copyright">&copy Copyright Planeta Mascotas - 2022</p>
 </footer>
-</html>
+</html>    
