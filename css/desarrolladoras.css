@@ -1,14 +1,14 @@
 .dev{
-    padding: 3em 0;
-    width: 940px;
-    margin: 0 auto; 
+    padding: 3em 0 0;
+    margin: 50px 50px;
 }
 .dev-info {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 
-#dev-foto {
+.dev-foto {
     width: 200px;
     height: 100px;
 }

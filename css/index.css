@@ -300,19 +300,13 @@ a, button {
 }
 
 /* Style banner */
-
-.banner{
-    width: auto;
-    height: 540px;
-	background-image: url(/Imagenes/banner.png);
-	background-size: contain;
+#banner-home {
+	width: 100%;
 }
 
-
 /* Style del selector de Gatos o Perros */
-
 #selector1 {
-	margin-top: 200px;
+	margin-top: 50px;
 	text-align: center;
 	padding: 1.5em 1em;
 }
@@ -427,4 +421,17 @@ a, button {
   -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+}
+
+footer{
+    text-align: center;
+    padding: 50px 50px 25px;
+} 
+#logo{
+    width: 250px;
+    height: 250px;
+}
+
+.copyright {
+    font-size: 13px;
 }
