@@ -41,7 +41,7 @@
 .items {
     font-style:italic;
     text-align: center;
-    font-size: 1rem ;
+    font-size: 2rem ;
 }
 .items:before{
     content:"☆";

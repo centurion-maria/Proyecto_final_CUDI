@@ -4,11 +4,12 @@
     
 }
 
-h1{ 
+.titulo-principal{ 
     text-align: center;
     padding: 30px;
+    font-size: 3rem;
 }
-h2{
+.titulo-secundario{
     text-align: center;
 }
 p{
@@ -22,6 +23,14 @@ p{
     font-style: italic;
     font-weight: bold;
 }
+.mapa{
+    padding: 3rem 0;
+}
+
+.mapa p{
+    margin: 0 0 2rem;
+}
+
 footer{
     text-align: center;
     padding: 100px;
