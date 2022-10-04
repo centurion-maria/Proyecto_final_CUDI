@@ -43,7 +43,7 @@ html {
 }
   
 body {
-	background-image: url("Imagenes/fondo.png");
+	background-image: url("/Imagenes/fondo.png");
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -305,8 +305,9 @@ a, button {
 
 /* Style del selector de Gatos o Perros */
 #selector1 {
+	display: flex;
+    justify-content: center;
 	margin-top: 50px;
-	text-align: center;
 	padding: 1.5em 1em;
 }
 
