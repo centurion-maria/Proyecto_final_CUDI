@@ -11,94 +11,71 @@
     <title>Planeta Mascotas</title>
 </head>
 <body>
-        <!-- Barra de navegacion -->
-        <header class="header" id="header">
-            <section class="wrapper container">
-              <a href="index.html" class="brand">
-                <img src="Imagenes/logo_nav.png" alt="logo" width="40" height="35" class="d-inline-block align-text-top"> Planeta Mascotas 
-              </a>
-              <div class="burger" id="burger">
-                  <span class="burger-line"></span>
-                  <span class="burger-line"></span>
-                  <span class="burger-line"></span>
-              </div>
-              <span class="overlay"></span>
-              <nav class="navbar" id="navbar">
-                  <ul class="menu" id="menu">
-                      <li class="menu-item menu-dropdown">
-                          <span class="menu-link" data-toggle="submenu"> Productos <i class="bx bx-chevron-down"></i></span>
-                          <ul class="submenu">
-                          <li class="submenu-item"><a href="#" class="submenu-link"> Gatos </a></li>
-                          <li class="submenu-item"><a href="#" class="submenu-link"> Perros </a></li>
-                          </ul>
-                      </li>
-                      <li class="menu-item"><a href="login.html" class="menu-link"> Login </a></li>
-                      <li class="menu-item"><a href="acerca-de-nosotros.html" class="menu-link"> Acerca de nosotros </a></li>
-                      <li class="menu-item"><a href="servicios.html" class="menu-link"> Servicios </a></li>
-                      <li class="menu-item"><a href="desarrolladoras.html" class="menu-link"> Desarrolladoras </a></li>
-                  </ul>
-              </nav>
-          </section>
-          </header>
+    <!-- Barra de navegacion -->
+    <header class="header" id="header">
+        <section class="wrapper container">
+            <a href="index.html" class="brand">
+            <img src="Imagenes/logo_nav.png" alt="logo" width="40" height="35" class="d-inline-block align-text-top"> Planeta Mascotas 
+            </a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <nav class="navbar" id="navbar">
+                <ul class="menu" id="menu">
+                    <li class="menu-item menu-dropdown">
+                        <span class="menu-link" data-toggle="submenu"> Productos <i class="bx bx-chevron-down"></i></span>
+                        <ul class="submenu">
+                        <li class="submenu-item"><a href="#" class="submenu-link"> Gatos </a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link"> Perros </a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="login.html" class="menu-link"> Login </a></li>
+                    <li class="menu-item"><a href="acerca-de-nosotros.html" class="menu-link"> Acerca de nosotros </a></li>
+                    <li class="menu-item"><a href="servicios.html" class="menu-link"> Servicios </a></li>
+                    <li class="menu-item"><a href="desarrolladoras.html" class="menu-link"> Desarrolladoras </a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
 
-
-    <!-- Form-->
-    <div class="form">
-        <div class="form-toggle"></div>
-        <div class="form-panel one">
-            <div class="form-header">
-                <h1> Login </h1>
-            </div>
-            <div class="form-content">
-                <form>
-                    <div class="form-group">
-                        <label for="username">Usuario</label>
-                        <input type="text" id="username" name="username" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-remember">
-                        <input type="checkbox"/> Recordarme
-                        </label><a class="form-recovery" href="#">¿Olvidaste la contraseña?</a>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Aceptar</button>
-                    </div>
-                </form>
-            </div>
+    <!-- Form -->
+    <div class="login-box">
+        <div class="lb-header">
+          <a href="#" class="active" id="login-box-link">Login</a>
+          <a href="#" id="signup-box-link">Registrate</a>
         </div>
-        <div class="form-panel two">
-            <div class="form-header">
-                <h1>Registrate</h1>
-            </div>
-            <div class="form-content">
-                <form>
-                    <div class="form-group">
-                        <label for="username">Usuario</label>
-                        <input type="text" id="username" name="username" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="cpassword">Confirmar contraseña</label>
-                        <input type="password" id="cpassword" name="cpassword" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Aceptar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+        <form class="email-login">
+          <div class="u-form-group">
+            <input type="email" placeholder="Email"/>
+          </div>
+          <div class="u-form-group">
+            <input type="password" placeholder="Contraseña" autocomplete="contraseña"/>
+          </div>
+          <div class="u-form-group">
+            <button>Log in</button>
+          </div>
+          <div class="u-form-group">
+            <a href="#" class="forgot-password">¿Olvidaste la contraseña?</a>
+          </div>
+        </form>
+        <form class="email-signup">
+          <div class="u-form-group">
+            <input type="email" placeholder="Email"/>
+          </div>
+          <div class="u-form-group">
+            <input type="password" placeholder="Contraseña" autocomplete="contraseña"/>
+          </div>
+          <div class="u-form-group">
+            <input type="password" placeholder="Confirmar contraseña" autocomplete="contraseña"/>
+          </div>
+          <div class="u-form-group">
+            <button>Aceptar</button>
+          </div>
+        </form>
+      </div>
     <script src="js/jquery.js"></script>
     <script src="js/login_script.js"></script>
 </body>
