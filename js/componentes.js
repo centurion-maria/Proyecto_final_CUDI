@@ -1,6 +1,6 @@
-class Myheader extends HTMLElement{
+class MyHeader extends HTMLElement{
     connectedCallback() {
-        this.innerHTML = 
+        this.innerHTML =`
             
         <header class="header" id="header">
       <section class="wrapper container">
@@ -29,8 +29,23 @@ class Myheader extends HTMLElement{
             </ul>
         </nav>
     </section>
-    </header>
+        </header>
+        `
     }
 }
 
-customElements.define ('my-header', Myheader)
+customElements.define('my-header', MyHeader)
+
+
+class MyFooter extends HTMLElement{
+    connectedCallback() {
+        this.innerHTML = `
+             <footer>
+      <img id="logo" src="Imagenes/logo.jpg">
+      <p class="copyright">&copy Copyright Planeta Mascotas - 2022</p>
+    </footer>
+    `
+    }
+} 
+
+customElements.define('my-footer', MyFooter)
