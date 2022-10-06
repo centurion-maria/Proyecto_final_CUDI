@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="icon" href="Imagenes/logo_nav.png">
-    <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
-    <script type="module" src="js/componentes.js"></script>
-    <title>Planeta Mascotas</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Imagenes/logo_nav.png">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Adamina'>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/login.css">
+        <script type="module" src="js/componentes.js"></script>
+        <title>Login</title>
+    </head>
+    <body>
         <!-- Barra de navegacion -->
         <my-header></my-header>
 
-    <!-- Form-->
-    <div class="form">
-        <div class="form-toggle"></div>
-        <div class="form-panel one">
-            <div class="form-header">
-                <h1> Login </h1>
+        <!-- Form-->
+        <div class="form">
+            <div class="form-toggle"></div>
+            <div class="form-panel one">
+                <div class="form-header">
+                    <h1> Login </h1>
+                </div>
+                <div class="form-content">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Usuario</label>
+                            <input type="text" id="username" name="username" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-remember">
+                            <input type="checkbox"/> Recordarme
+                            </label><a class="form-recovery" href="#">¿Olvidaste la contraseña?</a>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Aceptar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-content">
-                <form>
-                    <div class="form-group">
-                        <label for="username">Usuario</label>
-                        <input type="text" id="username" name="username" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-remember">
-                        <input type="checkbox"/> Recordarme
-                        </label><a class="form-recovery" href="#">¿Olvidaste la contraseña?</a>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Aceptar</button>
-                    </div>
-                </form>
+            <div class="form-panel two">
+                <div class="form-header">
+                    <h1>Registrate</h1>
+                </div>
+                <div class="form-content">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Usuario</label>
+                            <input type="text" id="username" name="username" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpassword">Confirmar contraseña</label>
+                            <input type="password" id="cpassword" name="cpassword" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required="required"/>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Aceptar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="form-panel two">
-            <div class="form-header">
-                <h1>Registrate</h1>
-            </div>
-            <div class="form-content">
-                <form>
-                    <div class="form-group">
-                        <label for="username">Usuario</label>
-                        <input type="text" id="username" name="username" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Contraseña</label>
-                        <input type="password" id="password" name="password" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="cpassword">Confirmar contraseña</label>
-                        <input type="password" id="cpassword" name="cpassword" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required="required"/>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit">Aceptar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/login_script.js"></script>
-</body>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/login_script.js"></script>
+    </body>
 </html>
