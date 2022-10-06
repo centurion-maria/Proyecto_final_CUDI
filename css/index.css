@@ -305,8 +305,9 @@ a, button {
 
 /* Style del selector de Gatos o Perros */
 #selector1 {
+	display: flex;
+    justify-content: center;
 	margin-top: 50px;
-	text-align: center;
 	padding: 1.5em 1em;
 }
 
