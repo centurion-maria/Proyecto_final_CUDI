@@ -26,6 +26,7 @@ class MyHeader extends HTMLElement{
                 <li class="menu-item"><a href="acerca-de-nosotros.html" class="menu-link"> Acerca de nosotros </a></li>
                 <li class="menu-item"><a href="servicios.html" class="menu-link"> Servicios </a></li>
                 <li class="menu-item"><a href="desarrolladoras.html" class="menu-link"> Desarrolladoras </a></li>
+                <li class="menu-item"><a href="carrito.html" class="menu-link"> Carrito </a></li>
             </ul>
         </nav>
     </section>
