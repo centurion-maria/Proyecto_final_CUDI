@@ -16,7 +16,7 @@ class MyHeader extends HTMLElement{
                 <nav class="navbar" id="navbar">
                     <ul class="menu" id="menu">
                         <li class="menu-item menu-dropdown">
-                            <span class="menu-link" data-toggle="submenu"> Productos <i class="bx bx-chevron-down"></i></span>
+                            <span class="menu-link" data-toggle="submenu"><a href="productos.html" class="menu-link"> Productos <i class="bx bx-chevron-down"></a></i></span>
                             <ul class="submenu">
                                 <li class="submenu-item"><a href="#" class="submenu-link"> Gatos </a></li>
                                 <li class="submenu-item"><a href="#" class="submenu-link"> Perros </a></li>
