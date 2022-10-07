@@ -18,8 +18,8 @@ class MyHeader extends HTMLElement{
                         <li class="menu-item menu-dropdown">
                             <span class="menu-link" data-toggle="submenu"> Productos <i class="bx bx-chevron-down"></i></span>
                             <ul class="submenu">
-                                <li class="submenu-item"><a href="#" class="submenu-link"> Gatos </a></li>
-                                <li class="submenu-item"><a href="#" class="submenu-link"> Perros </a></li>
+                                <li class="submenu-item"><a href="productos.html" class="submenu-link"> Gatos </a></li>
+                                <li class="submenu-item"><a href="productos.html" class="submenu-link"> Perros </a></li>
                             </ul>
                         </li>
                         <li class="menu-item"><a href="login.html" class="menu-link"> Login </a></li>
