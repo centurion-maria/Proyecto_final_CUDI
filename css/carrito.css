@@ -1,45 +1,34 @@
-.container {
+
+.titulo-principal {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 2rem;
+    padding: 100px;
+}
+
+
+.container-principal {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.titulo {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    margin: 30px;
-    font-size: 2rem;
-}
-
 .caja {
-    margin: 15px;
-}
-.producto {
     width: 220px;
-    height: 220px;
-    border-radius: 20px;
-}
-.caja p {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-button {
-    margin-top: 5px;
-    cursor: pointer;
-    padding: 5px;
+    height: 280px;
     border: solid 2px black;
+    border-radius: 20px;
+    margin: 15px;
+    text-align: center;
+    padding: 2rem;
+
 }
 
+.producto {
+    width: 100px;
+    height: 100px;
 
-
-
-
-
-
-
-
-
+}
