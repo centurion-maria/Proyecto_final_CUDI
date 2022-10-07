@@ -52,7 +52,7 @@ body {
 	background-color: var(--color-white-100);
 }
   
-a, button {
+a {
 	cursor: pointer;
 	border: none;
 	outline: none;
