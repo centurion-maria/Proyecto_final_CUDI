@@ -1,18 +1,38 @@
-* {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.contGrid{
-    display:flex;
+.container {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px;
 }
 
+.titulo {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.caja {
+    margin: 15px;
+}
+.producto {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+}
+.caja p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 5px;
+    cursor: pointer;
+    padding: 5px;
+    border: solid 2px black;
+}
 
 
 
