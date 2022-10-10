@@ -4,21 +4,23 @@
     
 }
 
-
 .titulo-principal{ 
     text-align: center;
     padding: 30px;
     font-size: 3rem;
 }
+
 .titulo-secundario{
 
     text-align: center;
 }
+
 .descripcion {
     text-align: center;
     font-family: Adamina;
     font-size: 20px;
 }
+
 .diferenciales p{
     color: palevioletred;
     font-size: 24px;
