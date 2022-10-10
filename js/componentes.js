@@ -1,3 +1,4 @@
+"use strict"
 /* Barra de navegación */
 
 class MyHeader extends HTMLElement{
@@ -73,7 +74,7 @@ $(document).ready(function(){
       }
       
       })
-    $.each(links, function(index,value){
+    $.each(links, function(_index,value){
       value.addEventListener("click",function(){
         if(!state) {
           $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
@@ -83,6 +84,6 @@ $(document).ready(function(){
           state = false
         }
         $('#nav-icon3').removeClass('open')
-      })
     })
   })
+})
