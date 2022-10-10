@@ -43,12 +43,12 @@ customElements.define('my-header', MyHeader)
 class MyFooter extends HTMLElement{
     connectedCallback() {
         this.innerHTML = `
-        <footer>
-            <div class="pie-pagina">
+        <footer class="pie-de-pagina">
+            <div class="parte-logo">
                 <img id="logo" src="Imagenes/logo.jpg">
                 <p class="copyright">&copy Copyright Planeta Mascotas - 2022</p>
             </div>
-            <div class="side-pie-pagina">
+            <div class="parte-enlaces">
                 <p><a href="desarrolladoras.html"> Desarrolladoras </a></p>
             </div>
         </footer>
