@@ -13,7 +13,7 @@ class MyHeader extends HTMLElement{
               <ul class="navbar__nav">
                 <li class="navbar__link after-transform"><a class="menu_link" href="productos.html">Productos</a></li>
                 <li class="navbar__link after-transform"><a class="menu_link" href="login.html">Login</a></li>
-                <li class="navbar__link after-transform"><a class="menu_link" href="acerca-de-nosotros.html">Acerca de Nosotros</a></li>
+                <li class="navbar__link after-transform"><a class="menu_link" href="acerca-de-nosotros.html">Acerca de nosotros</a></li>
                 <li class="navbar__link after-transform"><a class="menu_link" href="servicios.html">Servicios</a></li>
                 <li class="navbar__link after-transform"><a class="menu_link" href="#">
                     <img src="Imagenes/carrito_compras.png" alt="logo" width="35"></a>
