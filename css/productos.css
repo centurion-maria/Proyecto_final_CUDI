@@ -8,7 +8,6 @@
     padding: 30px;
 }
 
-
 .container-principal {
     width: 100%;
     display: flex;
@@ -25,17 +24,14 @@
     margin: 15px;
     text-align: center;
     padding: 30px;
-
-
 }
 
 .producto {
     width: 150px;
     height: 180px;
-
 }
 
-p{
+.marca{
     font-size: 20px;
     font-weight: bold;
 }
