@@ -460,15 +460,28 @@ a {
   opacity: 1;
 }
 
-footer{
-    text-align: center;
-    padding: 50px 50px 25px;
-} 
-#logo{
-    width: 250px;
-    height: 250px;
+.my-footer {
+	display: flex;
+    justify-content: center;
 }
 
-.copyright {
-    font-size: 13px;
+.pie-de-pagina{
+	display: flex;
+    align-self: center;
+    justify-content: space-between;
+    max-width: 500px;
+    column-gap: 100px;
+}
+
+#logo{
+	display: flex;
+	justify-content: space-between;
+    width: 250px;
+    height: 250px;
+	font-size: 13px;
+}
+
+.parte-enlaces {
+	display: flex;
+	justify-content: space-between;
 }
