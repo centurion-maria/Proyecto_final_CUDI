@@ -34,12 +34,26 @@ body {
 	color: var(--color-black-500);
 	background-color: var(--color-white-100);
 }
+<<<<<<< HEAD
 
 html {
 	font-size: 100%;
 	box-sizing: inherit;
 	scroll-behavior: smooth;
 	height: -webkit-fill-available;
+=======
+  
+a {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+	background: none;
+	box-shadow: none;
+>>>>>>> c80ce7c329e5e1f7447b98f9cc0f1096efde2bb7
 }
 
 .brand {
