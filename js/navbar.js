@@ -1,6 +1,4 @@
-"use strict"
 /* Barra de navegación */
-
 class MyHeader extends HTMLElement{
   connectedCallback() {
     this.innerHTML =`
@@ -38,52 +36,3 @@ class MyHeader extends HTMLElement{
   }
 }
 customElements.define('my-header', MyHeader)
-
-
-/* Footer */
-class MyFooter extends HTMLElement{
-    connectedCallback() {
-        this.innerHTML = `
-        <footer class="pie-de-pagina">
-            <div class="parte-logo">
-                <img id="logo" src="Imagenes/logo.jpg">
-                <p class="copyright">&copy Copyright Planeta Mascotas - 2022</p>
-            </div>
-            <div class="parte-enlaces">
-                <p><a href="desarrolladoras.html"> Desarrolladoras </a></p>
-            </div>
-        </footer>
-        `
-    }
-}
-customElements.define('my-footer', MyFooter)
-
-
-/* Responsive de la pagina*/
-$(document).ready(function(){
-    var state = false,
-        links = $('.navbar-responsive__link')
-      $('#nav-icon3').click(function(){
-          $(this).toggleClass('open');
-      if(!state) {
-        $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
-        state = true
-      } else {
-        $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
-        state = false
-      }
-      
-      })
-    $.each(links, function(_index,value){
-      value.addEventListener("click",function(){
-        if(!state) {
-          $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
-          state = true
-        } else {
-          $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
-          state = false
-        }
-        $('#nav-icon3').removeClass('open')
-    })
-  })
-})
