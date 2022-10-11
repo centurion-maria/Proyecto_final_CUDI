@@ -1,6 +1,4 @@
-"use strict"
 /* Barra de navegación */
-
 class MyHeader extends HTMLElement{
   connectedCallback() {
     this.innerHTML =`
@@ -38,6 +36,3 @@ class MyHeader extends HTMLElement{
   }
 }
 customElements.define('my-header', MyHeader)
-
-
-
