@@ -181,7 +181,6 @@ a {
 	transform: scaleX(1) translateZ(0);
 }
   
-/* Icon 3 */
 #nav-icon3 {
 	width: 30px;
 	height: calc(100%/2);
@@ -277,6 +276,65 @@ a {
 
 }
 
+/* Style banner*/
+#img1, #img2, #img3, #img4{
+    transition: all 0.5s ease;
+    height: 350px;
+    width: 100%;
+}
+.slideshow{
+    max-width: 100%;;
+    margin:auto;
+    position:relative;
+}
+.flecha{
+    font-size: 60pt;
+    color: white;
+    top: 30%;
+    padding: 0;
+    position: absolute;
+}
+.btn{
+    color:white;
+    width:100%;
+    text-align: center;
+    
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+}
+.antes{
+    float:left;
+    position: absolute;
+}
+.despues{
+    float:right;
+    position: absolute;
+    right: 0;
+}
+.despues:hover, .antes:hover{
+    color:#61635a;
+    cursor: pointer;
+}
+
+  
+.dot{
+    height:13px;
+    width:13px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    background-color:transparent;
+    border: 1px solid #ccc;
+}
+.dot:hover{
+    background-color:#fff;
+    cursor: pointer;
+}
+
+
 /* Style search */
 
 .search-bar input,
@@ -366,7 +424,6 @@ a {
 	height: 1px;
 }
 
-/* Active state */
 .search-bar input:focus + .search-btn,
 .search-bar input:valid + .search-btn {
 	background: #f7901b;
@@ -389,16 +446,10 @@ a {
 	transform: translateY(1px);
 }
 
-/* Style banner */
-#banner-home {
-	width: 100%;
-}
-
 /* Style del selector de Gatos o Perros */
 #selector1 {
 	display: flex;
     justify-content: center;
-	margin-top: 50px;
 	padding: 1.5em 1em;
 }
 

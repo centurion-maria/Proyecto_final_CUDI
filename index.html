@@ -19,19 +19,31 @@
     <my-header></my-header>
 
     <!-- Seccion del banner -->
-    <img src="Imagenes/banner-home.png" alt="banner" id="banner-home">
+    <div class="slideshow">
+      <img id="img1" class="slide" src="Imagenes/carousel.jpg">
+      <img id="img2" class="slide" src="Imagenes/carousel2.jpg">
+      <img id="img3" class="slide" src="Imagenes/carousel3.jpg">
+      <img id="img4" class="slide" src="Imagenes/carousel4.png">
+      <div class="flecha antes" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="flecha despues" onclick="plusDivs(1)">&#10095;</div>
+      <div class="btn">
+        <span class="dot" onclick="currentDiv(1)"></span>
+        <span class="dot" onclick="currentDiv(2)"></span>
+        <span class="dot" onclick="currentDiv(3)"></span>
+        <span class="dot" onclick="currentDiv(4)"></span>
+      </div>
+    </div>
 
     <!-- Search -->
     <section class="buscar">
       <form action="" class="search-bar">
-        <input type="search" name="search" pattern=".*\S.*" required autocomplete="off">
+        <input type="search" name="search" pattern=".*\S.*" autocomplete="off" placeholder="Buscar...">
         <button class="search-btn" type="submit">
           <span>Buscar</span>
         </button>
       </form>
     </section>
-
-
+      
     <!-- Seccion para elegir -->
     <section class="section-1" id="selector1">
       <div class="row">
@@ -42,20 +54,19 @@
           </figcaption>
           <a href="gatos.html"></a>
         </figure>
-            <figure class="figure">
+        <figure class="figure">
           <img src="Imagenes/perro.jpg">
-          <figcaption>
-            <h3>Perros</h3>
-          </figcaption>
-          <a href="perros.html"></a>
+            <figcaption>
+              <h3>Perros</h3>
+            </figcaption>
+            <a href="perros.html"></a>
         </figure>
       </div>
     </section>
-
+      
     <!-- Pie de página -->
     <my-footer class="my-footer"></my-footer>
-
     <script src="js/jquery.js"></script>
-  </body>
+    <script src="js/banner.js"></script>
   </body>   
 </html>
