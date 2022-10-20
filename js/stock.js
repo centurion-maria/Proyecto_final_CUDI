@@ -66,7 +66,7 @@ let stockProductos = [
         "nombre": "Royal Canin",
         "cantidad": "10",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_perro3jpg"
+        "imagen": "./imagenes/alimento_perro3.jpg"
     },
 
     {   "id": 11,
