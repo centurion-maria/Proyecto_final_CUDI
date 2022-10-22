@@ -3,70 +3,70 @@ let stockProductos = [
         "nombre": "Agility cats",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_gato1.png"
+        "imagen": "../imagenes/alimento_gato1.png"
     },
 
     {   "id": 2,
         "nombre": "Mon Ami",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_gato2.jpg"
+        "imagen": "../imagenes/alimento_gato2.jpg"
     },
 
     {   "id": 3,
         "nombre": "Excellent",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_gato3.png"
+        "imagen": "../imagenes/alimento_gato3.png"
     },
 
     {   "id": 4,
         "nombre": "Pro Plan",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_gato4.png"
+        "imagen": "../imagenes/alimento_gato4.png"
     },
 
     {   "id": 5,
         "nombre": "Royal Canin",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_gato5.jpg"
+        "imagen": "../imagenes/alimento_gato5.jpg"
     },
 
     {   "id": 6,
         "nombre": "Sabrositos",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_gato6.jpg" 
+        "imagen": "../imagenes/alimento_gato6.jpg" 
     },
 
     {   "id": 7,
         "nombre": "Alta Gama",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_gato7.jpg"
+        "imagen": "../imagenes/alimento_gato7.jpg"
     },
 
     {   "id": 8,
         "nombre": "Balanced",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_perro1.jpg" 
+        "imagen": "../imagenes/alimento_perro1.jpg" 
     },
 
     {   "id": 9,
         "nombre": "Old Prince",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_perro2.jpg"
+        "imagen": "../imagenes/alimento_perro2.jpg"
     },
 
     {   "id": 10,
         "nombre": "Royal Canin",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_perro3.jpg"
+        "imagen": "../imagenes/alimento_perro3.jpg"
     },
 
     {   "id": 11,
@@ -80,42 +80,42 @@ let stockProductos = [
         "nombre": "Nutribon",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_perro5.png"
+        "imagen": "../imagenes/alimento_perro5.png"
     },
 
     {   "id": 13,
         "nombre": "MiMaskot",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_perro6.jpg"
+        "imagen": "/imagenes/alimento_perro6.jpg"
     },
 
     {   "id": 14,
         "nombre": "Agility",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/alimento_perro7.png"
+        "imagen": "/imagenes/alimento_perro7.png"
     },
 
     {   "id": 15,
         "nombre": "Pet Dry Pañales",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/panales-para-perro.jpg"
+        "imagen": "/imagenes/panales-para-perro.jpg"
     },
 
     {   "id": 16,
         "nombre": "Dentalife",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/DENTALIFE-PERRO.png"
+        "imagen": "/imagenes/DENTALIFE-PERRO.png"
     },
 
     {   "id": 17,
         "nombre": "Clean Dog",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/pipeta_perros.jpg"
+        "imagen": "/imagenes/pipeta_perros.jpg"
     },
 
     {   "id": 18,
@@ -129,69 +129,69 @@ let stockProductos = [
         "nombre": "Juguete 1",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/juguete1.jpg"
+        "imagen": "/imagenes/juguete1.jpg"
     },
 
     {   "id": 20,
         "nombre": "Juguete 2",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/juguete2.jpg"
+        "imagen": "/imagenes/juguete2.jpg"
     },
 
     {   "id": 21,
         "nombre": "Juguete 3",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/juguete3.jpg"
+        "imagen": "/imagenes/juguete3.jpg"
     },
 
     {   "id": 22,
         "nombre": "Mordillo 1",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/juguete4.jpg"
+        "imagen": "/imagenes/juguete4.jpg"
     },
 
     {   "id": 23,
         "nombre": "Mordillo 2",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/juguete5.jpg"
+        "imagen": "/imagenes/juguete5.jpg"
     },
 
     {   "id": 24,
         "nombre": "Mordillo 3",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/cepillo-de-dientes.jpg"
+        "imagen": "/imagenes/cepillo-de-dientes.jpg"
     },
 
     {   "id": 25,
         "nombre": "Frontline Gato",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/frontline-plus-gato.png"
+        "imagen": "/imagenes/frontline-plus-gato.png"
     },
 
     {   "id": 26,
         "nombre": "Power Met",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/pipeta-gato1.png"
+        "imagen": "/imagenes/pipeta-gato1.png"
     },
 
     {   "id": 27,
         "nombre": "The Best",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/piedritas-sanitarias1.jpg"
+        "imagen": "/imagenes/piedritas-sanitarias1.jpg"
     },
 
     {   "id": 27,
         "nombre": "Absorsol",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./imagenes/piedritas-sanitarias3.jpg"
+        "imagen": "/imagenes/piedritas-sanitarias3.jpg"
     },
 ]
