@@ -143,7 +143,7 @@ let stockProductos = [
         "nombre": "Juguete 3",
         "cantidad": "1",
         "precio": "1000",
-        "imagen": "./Imagenes/juguete3.jpg"
+        "imagen": "./Imagenes/Juguete3.jpg"
     },
 
     {   "id": 22,
