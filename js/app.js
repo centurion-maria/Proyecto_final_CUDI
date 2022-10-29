@@ -27,30 +27,80 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
-//PRIMER PRIMER PASO, INYECTAR EL HTML
-stockProductos.forEach((producto) => {
-    const div = document.createElement('div')
-    div.classList.add('producto')
-    div.innerHTML = `
-    <img class="producto_imagen" src=${producto.imagen} alt= "alimento">
-    <h3>${producto.nombre}</h3>
-    <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-    `
-    contenedorProductos.appendChild(div)
 
-    //2 - SEGUNDO PASO, LUEGO DE QUE INSERTEMOS EL HTML EN EL DOM:
-    const boton = document.getElementById(`agregar${producto.id}`)
-    //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado
-    //le hago un get element by id (el de agregar) Obtengo el elemento y a dicho elemento le agregamos
-    //el add event listener
+let stockProductos= []
+console.log(stockProductos)
 
-    boton.addEventListener('click', () => {
-        //esta funcion ejecuta el agregar el carrito con la id del producto
-        agregarAlCarrito(producto.id)
-        //
-    })
+console.log(axios)
+await axios.get('http://127.0.0.1:5000/productos')
+.then(response => {
+    stockProductos = response.data;
+    console.log(stockProductos)
 })
+.catch(e => {
+    // Podemos mostrar los errores en la consola
+    console.log(e);
+})
+
+
+//PRIMER PRIMER PASO, INYECTAR EL HTML
+const updateStockItems = stock => {
+    console.log(stock)
+
+    const productos = [stock]
+
+    productos.forEach((producto) => {
+        const div = document.createElement('div')
+        div.classList.add('producto')
+        div.innerHTML = `
+        <img class="producto_imagen" src=${producto.imagen} alt= "alimento">
+        <h3>${producto.nombre}</h3>
+        <p class="precioProducto">Precio:$ ${producto.precio}</p>
+        <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+        `
+        contenedorProductos.appendChild(div)
+    
+        //2 - SEGUNDO PASO, LUEGO DE QUE INSERTEMOS EL HTML EN EL DOM:
+        const boton = document.getElementById(`agregar${producto.id}`)
+        //Por cada elemento de mi array, creo un div, lo cuelgo, le pongo un id particular, una vez colgado
+        //le hago un get element by id (el de agregar) Obtengo el elemento y a dicho elemento le agregamos
+        //el add event listener
+    
+        boton.addEventListener('click', () => {
+            //esta funcion ejecuta el agregar el carrito con la id del producto
+            agregarAlCarrito(producto.id)
+            //
+        })
+    })
+}
+
+
+// ...
+
+const BACKEND_URL = 'http://127.0.0.1:5000';
+
+const getStock = async () => {
+  try {
+    const response = await axios.get(`${BACKEND_URL}/productos`);
+
+    const stock = response.data;
+
+    console.log(`GET: Here's the list of products`, stock);
+
+    return stock;
+  } catch (errors) {
+    console.error(errors);
+  }
+};
+
+console.log("hola")
+
+const main = async () => {
+    updateStockItems(await getStock());
+  };
+  
+  main();
+
 
 // 1- PRIMER PASO
 
@@ -126,3 +176,4 @@ const actualizarCarrito = () => {
     //empezando en 0.
 
 }
+

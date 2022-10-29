@@ -1,4 +1,4 @@
-let stockProductos = [
+/*let stockProductos = [
     {   "id": 1,
         "nombre": "Agility cats",
         "cantidad": "1",
@@ -194,4 +194,4 @@ let stockProductos = [
         "precio": "1000",
         "imagen": "./Imagenes/piedritas-sanitarias3.jpg"
     },
-]
+]*/
