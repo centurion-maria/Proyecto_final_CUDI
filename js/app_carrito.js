@@ -37,15 +37,15 @@ const updateStockItems = stock => {
     console.log(stock)
 
 
-    const productos = [stock]
+    const productos = stock
 
-    console.log([stock])
+    console.log(stock)
 
     productos.forEach((producto) => {
         const div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML = `
-        <img class="producto_imagen" src=${producto.imagen} alt= "alimento">
+        <img class="producto_imagen" src="/imagenes/${producto.imagen}" alt= "alimento">
         <h3>${producto.nombre}</h3>
         <p class="precioProducto">Precio:$ ${producto.precio}</p>
         <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
