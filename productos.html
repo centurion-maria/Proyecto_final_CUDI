@@ -18,214 +18,37 @@
         <!-- Barra de navegacion -->
         <my-header></my-header>
 
-<!-- Search -->
-<section class="buscar">
-    <form action="" class="search-bar">
-        <input type="search" name="search" pattern=".*\S.*" autocomplete="off" placeholder="Buscar..." id="buscador">
-        <button class="search-btn" type="submit">
-            <span>Buscar</span>
-        </button>
-    </form>
-</section>
+        <!-- Search -->
+        <section class="buscar">
+            <form action="" class="search-bar">
+                <input type="search" name="search" pattern=".*\S.*" autocomplete="off" placeholder="Buscar..." id="buscador">
+                <button class="search-btn" type="submit">
+                    <span>Buscar</span>
+                </button>
+            </form>
+        </section>
 
-
-<!-- Carrito de Compras -->
-<section class="principal">
-    <h1 class="title">Catálogo de Productos</h1>
-    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-</section>
-<main id="contenedor-productos">
-
-</main>
-    <div class="modal-contenedor">
-        <div class="modal-carrito">
-            <h3>Carrito</h3>
-            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
-            <div id="carrito-contenedor">
-
-
-    <!--<div class="container-principal" id="items">
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_gato1.png">
-            <h1 class="descripcion">Agility cats</h1>
-            <p class=" precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
+        <!-- Carrito de Compras -->
+        <section class="principal">
+            <h1 class="title">Catálogo de Productos</h1>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        </section>
+        <main id="contenedor-productos"></main>
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor"></div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            </div>
         </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_gato2.jpg">
-            <h1 class="descripcion">Mon Ami</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_gato3.png">
-            <h1 class="descripcion">Excellent</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_gato4.png">
-            <h1 class="descripcion">Pro Plan</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_gato5.jpg">
-            <h1 class="descripcion">Royal Canin</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_gato6.jpg">
-            <h1 class="descripcion">Sabrositos</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_gato7.jpg">
-            <h1 class="descripcion" >Alta Gama</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_perro1.jpg">
-            <h1 class="descripcion">Balanced</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_perro2.jpg">
-            <h1 class="descripcion">Old Prince</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_perro3.jpg">
-            <h1 class="descripcion" >Royal Canin</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_perro4.jpg">
-            <h1 class="descripcion">Pedigree</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_perro5.png">
-            <h1 class="descripcion">Nutribon</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_perro6.jpg">
-            <h1 class="descripcion">MiMaskot</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/alimento_perro7.png">
-            <h1 class="descripcion">Agility</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/panales-para-perro.jpg">
-            <h1 class="descripcion">Pet Dry Pañales</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/DENTALIFE-PERRO.png">
-            <h1 class="descripcion">Dentalife</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/pipeta_perros.jpg">
-            <h1 class="descripcion">Clean Dog</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/Huesitos_perro.jpg">
-            <h1 class="descripcion">Goofy Huesitos</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/juguete1.jpg">
-            <h1 class="descripcion">Juguete 1</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/juguete2.jpg">
-            <h1 class="descripcion">Juguete 2</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/Juguete3.jpg">
-            <h1 class="descripcion">Juguete 3</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/juguete4.jpg">
-            <h1 class="descripcion">Mordillo 1</h1>
-            <p class="precio">$ 850</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/juguete5.jpg">
-            <h1 class="descripcion">Mordillo 2</h1>
-            <p class="precio">$ 950</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/cepillo-de-dientes.jpg">
-            <h1 class="descripcion">Mordillo 3 </h1>
-            <p class="precio">$ 800</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/frontline-plus-gato.png">
-            <h1 class="descripcion">Frontline Gato</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button> 
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/pipeta-gato1.png">
-            <h1 class="descripcion">Power Met</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/piedritas-sanitarias1.jpg">
-            <h1 class="descripcion">The best</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-        <div class="caja">
-            <img class="producto" src="Imagenes/piedritas-sanitarias3.jpg">
-            <h1 class="descripcion">Absorsol</h1>
-            <p class="precio">$ 1000</p>
-            <button type="button" class="btnAddCar">Añadir al carrito</button>
-        </div>
-    </div>> -->
-        </div>
-            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
-        </div>
-</div>
-        
+            
         <!--Pie de Página-->
         <my-footer class="my-footer"></my-footer>
         
         <script src="js/jquery.js"></script>
-        <script src="js/stock.js"></script>
-        <script type="module" src="js/app.js"></script>
+        <script type="module" src="js/app_carrito.js"></script>
         <script src="js/modal.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
     </body>
