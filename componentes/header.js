@@ -12,12 +12,8 @@ class MyHeader extends HTMLElement{
               <div id="nav-icon3"><span></span><span></span><span></span><span></span></div>
               <ul class="navbar__nav">
                 <li class="navbar__link after-transform"><a class="menu_link" href="productos.html">Productos</a></li>
-                <li class="navbar__link after-transform"><a class="menu_link" href="login.html">Login</a></li>
                 <li class="navbar__link after-transform"><a class="menu_link" href="acerca-de-nosotros.html">Acerca de Nosotros</a></li>
                 <li class="navbar__link after-transform"><a class="menu_link" href="servicios.html">Servicios</a></li>
-                <li class="navbar__link after-transform"><a class="menu_link" href="#">
-                    <img src="Imagenes/carrito_compras.png" alt="logo" width="35"></a>
-                </li>
               </ul>
             </nav>
           </div>
@@ -25,10 +21,8 @@ class MyHeader extends HTMLElement{
         <div class="navbar-responsive">
           <ul class="navbar-responsive__nav">
             <li class="navbar-responsive__link after-transform"><a href="productos.html">Productos</a></li>
-            <li class="navbar-responsive__link after-transform"><a href="login.html">Login</a></li>
             <li class="navbar-responsive__link after-transform"><a href="acerca-de-nosotros.html">Acerca de nosotros</a></li>
             <li class="navbar-responsive__link after-transform"><a href="servicios.html">Servicios</a></li>
-            <li class="navbar-responsive__link after-transform"><a href="#">Carrito</a></li>
           </ul>
         </div>
       </div>
