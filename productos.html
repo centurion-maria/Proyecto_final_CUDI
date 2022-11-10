@@ -18,6 +18,34 @@
         <!-- Barra de navegacion -->
         <my-header></my-header>
 
+        <button id="agregar-producto" onclick="agregarProducto()">Agregar un producto nuevo</button>
+
+        <!--Modal para añadir un producto-->
+
+        <section id="modal2" class="modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button id="modalCerrar" onclick="cerrarModale()"><i class="fas fa-times-circle"></i></button>
+                    <h3 id="titulo-agregar">Añadir un nuevo producto al stock</h3>
+                    <form method="post" id="formProducto" name="formProductoNuevo">
+                        <label for="nombre">Nombre del producto: </label>
+                        <input type="text" name="nombre" id="nombre">
+
+                        <label for="cantidad">Cantidad a agregar (1) una</label>
+                        <input type="text" name="cantidad" id="cantidad">
+
+                        <label for="precio">Precio: </label>
+                        <input type="text" name="precio" id="precio">
+
+                        <label for="imagen"></label>
+                        <input type="file" accept="image/*" name="imagen" id="imagen">
+    
+                        <input type="submit" value="añadir" id="submit" onclick="">
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <!-- Carrito de Compras -->
         <section class="principal">
             <h1 class="title">Catálogo de Productos</h1>
@@ -35,7 +63,7 @@
                 <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
             </div>
         </div>
-            
+
         <!--Pie de Página-->
         <my-footer class="my-footer"></my-footer>
         
