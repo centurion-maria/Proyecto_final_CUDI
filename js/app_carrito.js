@@ -95,7 +95,5 @@ const actualizarCarrito = () => {
         
     })
     contadorCarrito.innerText = carrito.length
-    console.log(carrito)
     precioTotal.innerText = carrito.reduce((acc, prod) => acc + prod.cantidad * prod.precio, 0)
-
 }
