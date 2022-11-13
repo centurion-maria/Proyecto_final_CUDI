@@ -21,7 +21,7 @@ const itemsCatalogo = stock => {
     const div = document.createElement('div')
     div.classList.add('producto')
     div.innerHTML = `
-    <img class="producto_imagen" src="/imagenes/${producto.imagen}" alt= "alimento">
+    <img class="producto_imagen" src="/Imagenes/${producto.imagen}" alt= "alimento">
     <h3>${producto.nombre}</h3>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
     <button id="eliminar ${producto.id}" class="boton-agregar">Eliminar <i class="fa-solid fa-trash-can"></i></button>
