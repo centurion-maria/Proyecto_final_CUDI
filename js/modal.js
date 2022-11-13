@@ -21,14 +21,3 @@ modalCarrito.addEventListener('click', (event) => {
     event.stopPropagation() //cuando clickeo sobre el modal se finaliza la propagacion del click a los elementos
     //padre
 });
-
-
-function agregarProducto(){
-    htmlModal = document.getElementById("modal2");
-    htmlModal.setAttribute("class", "modale opened");
-}
-
-function cerrarModale(){
-    htmlModal = document.getElementById("modal2");
-    htmlModal.setAttribute("class", "modale");
-}

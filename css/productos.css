@@ -20,7 +20,7 @@
     border: none;
 }
 
-#contenedor-productos {
+.contenedor-productos {
     margin: 60px auto;
     display: flex;
     justify-content: space-around;
