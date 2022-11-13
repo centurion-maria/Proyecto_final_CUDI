@@ -29,7 +29,7 @@ const updateStockItems = stock => {
         const div = document.createElement('div')
         div.classList.add('producto')
         div.innerHTML = `
-        <img class="producto_imagen" src="/imagenes/${producto.imagen}" alt= "alimento">
+        <img class="producto_imagen" src="/Imagenes/${producto.imagen}" alt= "alimento">
         <h3>${producto.nombre}</h3>
         <p class="precioProducto">Precio:$ ${producto.precio}</p>
         <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
