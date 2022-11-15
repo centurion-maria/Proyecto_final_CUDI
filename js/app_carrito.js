@@ -32,7 +32,7 @@ const updateStockItems = stock => {
         <img class="producto_imagen" src="/Imagenes/${producto.imagen}" alt= "alimento">
         <h3>${producto.nombre}</h3>
         <p class="precioProducto">Precio:$ ${producto.precio}</p>
-        <button id="agregar${producto.id}" class="boton">Agregar <i class="fas fa-shopping-cart"></i></button>
+        <button id="agregar${producto.id}" class="boton"><i class="fa-solid fa-cart-plus"></i> Agregar</button>
         `
         contenedorProductos.appendChild(div)
     

@@ -7,6 +7,7 @@
     text-align: center;
     padding: 30px 30px;
     font-size: 3rem;
+    color: var(--color-pink-400);
 }
 
 .titulo-secundario{
@@ -68,9 +69,6 @@
     font-style:italic;
     text-align: center;
     font-size: 2rem ;
-}
-.items:before{
-    content:"☆";
 }
 
 .video {
