@@ -24,7 +24,7 @@ const itemsCatalogo = stock => {
     <img class="producto_imagen" src="/Imagenes/${producto.imagen}" alt= "alimento">
     <h3>${producto.nombre}</h3>
     <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id="eliminar ${producto.id}" class="boton-agregar">Eliminar <i class="fa-solid fa-trash-can"></i></button>
+    <button id="eliminar ${producto.id}" class="boton">Eliminar <i class="fa-solid fa-trash-can"></i></button>
     `
     contenedorProductos.appendChild(div)
     

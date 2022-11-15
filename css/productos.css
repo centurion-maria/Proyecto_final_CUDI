@@ -1,3 +1,6 @@
+*{
+    font-family: Adamina;
+}
 .principal{
     display: flex;
     flex-direction: row;
@@ -51,7 +54,7 @@
     align-items: baseline;
 }
 
-.boton-agregar {
+.boton {
     display: flex;
     background-color: #28B19D;
     color: white;
@@ -62,11 +65,11 @@
     max-width: 100%;
 }
 
-.boton-agregar:hover {
+.boton:hover {
     cursor: pointer;
 }
 
-.boton-agregar:focus {
+.boton:focus {
     outline: none;
 }
 
@@ -185,11 +188,9 @@
 }
 
 #formProducto {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: inline-block;
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 20px;
 }
 
@@ -233,4 +234,9 @@
 }
 #agregar-producto:active {
     top: 2px;
+}
+
+#formProducto .child {
+    padding: 10px;
+    text-align: end;
 }
